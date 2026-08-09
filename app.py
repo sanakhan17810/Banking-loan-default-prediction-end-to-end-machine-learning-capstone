@@ -28,6 +28,43 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+st.markdown("""
+<style>
+/* Dropdown menu */
+div[role="listbox"] {
+    background-color: #1E293B !important;
+}
+
+/* Dropdown options */
+div[role="option"] {
+    background-color: #1E293B !important;
+    color: white !important;
+}
+
+/* Hovered option */
+div[role="option"]:hover {
+    background-color: #334155 !important;
+    color: white !important;
+}
+
+/* Selected option */
+div[role="option"][aria-selected="true"] {
+    background-color: #0F766E !important;
+    color: white !important;
+}
+
+/* Selectbox text */
+div[data-baseweb="select"] {
+    background-color: #1E293B !important;
+    color: white !important;
+}
+
+/* Selectbox selected value */
+div[data-baseweb="select"] * {
+    color: white !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_DIR, "loan_default_model.pkl")
