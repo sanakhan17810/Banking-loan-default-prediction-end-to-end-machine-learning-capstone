@@ -33,7 +33,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_DIR, "loan_default_model.pkl")
 SCALER_PATH = os.path.join(BASE_DIR, "scaler.pkl")
 ENCODER_PATH = os.path.join(BASE_DIR, "label_encoder.pkl")
-DATA_PATH = os.path.join(BASE_DIR, "data", "loan_portfolio.csv")
+DATA_PATH = os.path.join(BASE_DIR, "loan_portfolio.csv")
 
 # Exact column order the model / scaler were fitted on
 FEATURE_ORDER = [
