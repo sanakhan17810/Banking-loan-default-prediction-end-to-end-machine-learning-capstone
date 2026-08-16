@@ -408,7 +408,25 @@ div[data-baseweb="popover"] li *,
 div[data-baseweb="popover"] [data-baseweb="option"] * {
     color: #F8FAFC !important;
 }
+/* FORCE DARK OPTION STATES */
+div[role="listbox"] {
+    background-color: #111A2E !important;
+}
 
+div[role="listbox"] [role="option"] {
+    background-color: #111A2E !important;
+    color: #FFFFFF !important;
+}
+
+div[role="listbox"] [role="option"]:hover {
+    background-color: #1E3A5F !important;
+    color: #FFFFFF !important;
+}
+
+div[role="listbox"] [role="option"][aria-selected="true"] {
+    background-color: #2563EB !important;
+    color: #FFFFFF !important;
+}
 /* Hover */
 div[data-baseweb="popover"] li:hover,
 div[data-baseweb="popover"] li[role="option"]:hover,
