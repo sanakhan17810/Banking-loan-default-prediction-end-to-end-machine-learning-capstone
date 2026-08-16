@@ -380,6 +380,40 @@ def inject_css():
             background-color: #0D1424 !important;
         }
         div[data-baseweb="select"] > div { background-color: #0D1424 !important; border-color: rgba(59,130,246,0.3) !important; }
+        /* ---------- DARK DROPDOWN OPTIONS ---------- */
+
+div[data-baseweb="popover"] {
+    background-color: #111A2E !important;
+}
+
+div[data-baseweb="popover"] > div {
+    background-color: #111A2E !important;
+}
+
+div[data-baseweb="popover"] div[data-baseweb="menu"] {
+    background-color: #111A2E !important;
+    border: 1px solid rgba(59,130,246,0.35) !important;
+    border-radius: 10px !important;
+}
+
+div[data-baseweb="popover"] ul[role="listbox"] {
+    background-color: #111A2E !important;
+}
+
+div[data-baseweb="popover"] li[role="option"] {
+    background-color: #111A2E !important;
+    color: #F8FAFC !important;
+}
+
+div[data-baseweb="popover"] li[role="option"]:hover {
+    background-color: #1E3A5F !important;
+    color: #FFFFFF !important;
+}
+
+div[data-baseweb="popover"] li[role="option"][aria-selected="true"] {
+    background-color: #2563EB !important;
+    color: #FFFFFF !important;
+}
 
         [data-testid="stMetricValue"] { color: #F8FAFC; }
         [data-testid="stMetricLabel"] { color: #94A3B8; }
