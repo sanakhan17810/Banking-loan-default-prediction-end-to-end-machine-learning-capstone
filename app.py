@@ -381,6 +381,50 @@ def inject_css():
         }
         div[data-baseweb="select"] > div { background-color: #0D1424 !important; border-color: rgba(59,130,246,0.3) !important; }
         /* ---------- DARK DROPDOWN OPTIONS ---------- */
+        /* ---------- FORCE DARK STREAMLIT DROPDOWN ---------- */
+
+/* Dropdown popup */
+div[data-baseweb="popover"],
+div[data-baseweb="popover"] > div,
+div[data-baseweb="popover"] > div > div,
+div[data-baseweb="menu"],
+ul[role="listbox"] {
+    background: #111A2E !important;
+    background-color: #111A2E !important;
+    color: #F8FAFC !important;
+}
+
+/* Every dropdown option */
+div[data-baseweb="popover"] li,
+div[data-baseweb="popover"] li[role="option"],
+div[data-baseweb="popover"] [data-baseweb="option"] {
+    background: #111A2E !important;
+    background-color: #111A2E !important;
+    color: #F8FAFC !important;
+}
+
+/* Text inside options */
+div[data-baseweb="popover"] li *,
+div[data-baseweb="popover"] [data-baseweb="option"] * {
+    color: #F8FAFC !important;
+}
+
+/* Hover */
+div[data-baseweb="popover"] li:hover,
+div[data-baseweb="popover"] li[role="option"]:hover,
+div[data-baseweb="popover"] [data-baseweb="option"]:hover {
+    background: #1E3A5F !important;
+    background-color: #1E3A5F !important;
+    color: #FFFFFF !important;
+}
+
+/* Selected option */
+div[data-baseweb="popover"] li[aria-selected="true"],
+div[data-baseweb="popover"] [aria-selected="true"] {
+    background: #2563EB !important;
+    background-color: #2563EB !important;
+    color: #FFFFFF !important;
+}
 
 div[data-baseweb="popover"] {
     background-color: #111A2E !important;
